@@ -7,15 +7,34 @@
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
     crossorigin=""/>
     <!-- Link to CSS file inside STYLE folder -->
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-    <div id="map"></div>
+    <header>
+        <h1>History Cache Philly</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/docs/pages/about.html">About</a></li>
+                <li><a href="/docs/pages/contact.html">Contact</a></li>
+                <li><a href="/docs/pages/map.html">Maps</a></li>
+            </ul>
+            </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h2>Explore Historic Philadelphia</h2>
+            <p>Discover Philly's history by clicking on different parts of the map.</p>
+            <button onclick="window.location.href='pages/map.html'">Explore Map</button>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 History Philly</p>
+        
+    </footer>
 </body>
 
- <!-- javascript files  -->
- <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-     crossorigin=""></script> <!-- leaflet's script for its map-->
-     <script src="scripts/script.js"></script> <!-- Link to javascript file inside scripts folder -->
+
 </html>

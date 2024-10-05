@@ -1,0 +1,6 @@
+/* import global themes */
+@import url('../global.css');
+
+p{
+    padding: 20px;
+}
