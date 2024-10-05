@@ -23,7 +23,7 @@ html, body {
     color: var(--default-text-color-dark); /* Default text color */
 }
 
-/* Grid container */
+/* Grid container for overall page layout */
 .container {
     display: grid;
     grid-template-rows: auto 1fr auto; /* Grid for header, content, and footer */
@@ -61,38 +61,24 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Hero Section */
-.hero {
-    background-color: var(--darker-color-for-hero); /* Darker blue for hero section */
-    color: white;
+/* Contact Section */
+.contact {
+    padding: 20px;
     text-align: center;
-    padding: 100px 20px;
     grid-row: 2; /* Place in the middle grid row */
 }
 
-.hero h2 {
-    font-size: 3rem;
-    color: var(--default-text-color); /* Bright yellow for contrast */
+.team-member {
+    display: inline-block;
+    width: 200px;
+    margin: 20px;
+    text-align: center;
 }
 
-.hero p {
-    font-size: 1.5rem;
-    margin: 1rem 0 2rem;
-    color: var(--light-text-color); /* Light text for readability */
-}
-
-.hero button {
-    background-color: var(--default-text-color); /* Bright yellow for button */
-    color: var(--darker-color-for-hero); /* Darker blue for button text */
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
-.hero button:hover {
-    background-color: var(--button-background-color); /* Gold hover effect */
+.profile-icon {
+    font-size: 60px;
+    color: var(--default-variable-color);
+    margin-bottom: 10px;
 }
 
 /* Footer styling */
@@ -136,10 +122,28 @@ button {
     border-radius: 5px;
 }
 
+/* Popup image */
 .popup-image {
     max-width: 80%;
     height: auto;
     display: block; /* Makes the image a block element */
     margin: 0 auto; /* Centers the image */
     border-radius: 8px; /* Optional: Rounded corners */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Stack the header and navigation for mobile */
+    nav ul {
+        flex-direction: column;
+    }
+    
+    .team-member {
+        width: 90%; /* Increase width on mobile */
+        margin: 10px auto; /* Center align */
+    }
+    
+    .contact h2 {
+        font-size: 2rem; /* Adjust heading size for mobile */
+    }
 }

@@ -4,79 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="../styles/global.css"> <!-- Link to your global CSS -->
+    <link rel="stylesheet" href="../styles/contact.css"> <!-- If additional styles are necessary -->
     <title>Geocatch Philly</title>
-
 </head>
 <body>
     <header>
         <h1>Geocatch Philly</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="map.html">Map</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="map.html">Maps</a></li>
             </ul>
         </nav>
     </header>
     
-    <main>
-        <section class="contact">
-            <h2>Our Team</h2>
-
-            <!-- Malek Aldalali -->
-            <div class="team-member">
-                <i class="fas fa-bell profile-icon"></i> <!-- Liberty Bell Icon -->
-                <h3>Malek Aldalali</h3>
-                <p>
-                    <a href="https://www.linkedin.com/in/malek-aldalali-515b8b283/" target="_blank">LinkedIn</a><br>
-                    <a href="https://github.com/Malek-son19" target="_blank">GitHub</a><br>
-                    <a href="mailto:malda0001@launchpadphilly.org">Email</a>
-                </p>
-            </div>
-
-            <!-- Mohamed Souare -->
-            <div class="team-member">
-                <i class="fas fa-city profile-icon"></i> <!-- Philadelphia Skyline Icon -->
-                <h3>Mohamed Souare</h3>
-                <p>
-                    <a href="https://www.linkedin.com/in/mohamed-souare-8a61a2259/" target="_blank">LinkedIn</a><br>
-                    <a href="https://github.com/MO-fr" target="_blank">GitHub</a><br>
-                    <a href="mailto:msoua0040@launchpadphilly.org">Email</a>
-                </p>
-            </div>
-
-            <!-- Antonio Archer -->
-            <div class="team-member">
-                <i class="fas fa-landmark profile-icon"></i> <!-- Independence Hall Icon -->
-                <h3>Antonio Archer</h3>
-                <p>
-                    <a href="https://www.linkedin.com/in/antonio-archer/" target="_blank">LinkedIn</a><br>
-                    <a href="https://github.com/AD-Archer" target="_blank">GitHub</a><br>
-                    <a href="mailto:aarch0004@launchpadphilly.org">Email</a>
-                </p>
-            </div>
-
-            <!-- Sianni Strickland -->
-            <div class="team-member">
-                <i class="fas fa-paint-brush profile-icon"></i> <!-- Paintbrush Icon -->
-                <h3>Sianni Strickland</h3>
-                <p>
-                    <a href="https://www.linkedin.com/in/sianni-strickland-934059284/" target="_blank">LinkedIn</a><br>
-                    <a href="https://github.com/SunnySianni" target="_blank">GitHub</a><br>
-                    <a href="mailto:sstri0041@launchpadphilly.org">Email</a>
-                </p>
-            </div>
-        </section>
-    </main>
+    <div class="container"> 
+        <main>
+            <section class="contact">
+                <h2>Our Team</h2>
+            
+                <!-- Team Member: Malek Aldalali -->
+                <div class="team-member">
+                    <img src="../images/personalprotraits/malek.jpg" alt="Malek Aldalali">
+                    <h3>Malek Aldalali</h3>
+                    <div class="links">
+                        <a href="https://www.linkedin.com/in/malek-aldalali-515b8b283/" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/Malek-son19" target="_blank">GitHub</a>
+                        <a href="mailto:malda0001@launchpadphilly.org">Email</a>
+                    </div>
+                </div>
+            
+                <!-- Team Member: Mohamed Souare -->
+                <div class="team-member" id="mo">
+                    <img src="../images/personalprotraits/moh.jpeg" alt="Mohamed Souare">
+                    <h3>Mohamed Souare</h3>
+                    <div class="links">
+                        <a href="https://www.linkedin.com/in/mohamed-souare-8a61a2259/" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/MO-fr" target="_blank">GitHub</a>
+                        <a href="mailto:msoua0040@launchpadphilly.org">Email</a>
+                    </div>
+                </div>
+            
+                <!-- Team Member: Sianni Strickland -->
+                <div class="team-member">
+                    <img src="../images/personalprotraits/sianni.jpg" alt="Sianni Strickland">
+                    <h3>Sianni Strickland</h3>
+                    <div class="links">
+                        <a href="https://www.linkedin.com/in/sianni-strickland-934059284/" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/SunnySianni" target="_blank">GitHub</a>
+                        <a href="mailto:sstri0041@launchpadphilly.org">Email</a>
+                    </div>
+                </div>
+            
+                <!-- Team Member: Antonio Archer -->
+                <div class="team-member">
+                    <img src="../images/personalprotraits/archer.jpeg" alt="Antonio Archer">
+                    <h3>Antonio Archer</h3>
+                    <div class="links">
+                        <a href="https://www.linkedin.com/in/antonio-archer/" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/AD-Archer" target="_blank">GitHub</a>
+                        <a href="mailto:aarch0004@launchpadphilly.org">Email</a>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+    </div>
     
     <footer>
         <p>&copy; 2024 Geocatch Philly</p>
-        <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-        </ul>
     </footer>
 </body>
 </html>

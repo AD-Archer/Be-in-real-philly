@@ -1,86 +1,57 @@
 /* import global themes */
 @import url('../global.css');
 
-
-
-root {
-    --default-variable-color: #0072B8; /* Philadelphia blue */
-    --default-text-color: #F4D35E; /* Bright yellow */
-    --darker-color-for-hero: #005C99; /* Darker color for hero */
-    --neutral-background-color: #FAF3DD; /* Neutral background */
-    --default-text-color-dark: #333; /* Dark text color */
-    --light-text-color: #F4F4F9; /* Light text for readability */
-    --button-background-color: #FFD700; /* Gold button background */
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: var(--neutral-background-color);
-    color: var(--default-text-color-dark);
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: var(--default-variable-color);
-    padding: 20px;
-    text-align: center;
-}
-
-header h1 {
-    color: var(--default-text-color);
-    margin: 0;
-}
-
+/* Contact Page Styles */
 .contact {
-    padding: 20px;
     text-align: center;
+    padding: 2rem 0;
 }
 
 .team-member {
-    display: inline-block;
-    width: 200px;
-    margin: 20px;
-    text-align: center;
+    text-align: center; /* Ensures everything inside is centered */
+    margin-bottom: 2rem;
 }
 
-.profile-icon {
-    font-size: 60px;
+.team-member img {
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    object-fit: cover; /* Ensures images cover the area */
+    border-radius: 50%; /* Optional: Round the images */
+}
+
+.links {
+    margin-top: 1rem;
+}
+
+.links a {
+    display: inline-block; /* Make the links inline but block-like */
+    margin: 0.25rem; /* Adjust spacing between links */
+    color: var(--default-text-color-dark);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links a:hover {
     color: var(--default-variable-color);
-    margin-bottom: 10px;
+    text-decoration: underline;
 }
 
 h3 {
-    color: var(--default-variable-color);
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: var(--default-text-color-dark);
 }
 
-p {
-    font-size: 14px;
-    line-height: 1.5;
-}
+/* Additional styling for responsiveness */
+@media (min-width: 768px) {
+    .team-member {
+        display: inline-block;
+        width: 23%; /* Width of each team member block */
+        margin-right: 1%;
+        vertical-align: top;
+    }
 
-footer {
-    background-color: var(--default-variable-color);
-    color: var(--default-text-color);
-    padding: 10px;
-    text-align: center;
-}
-
-footer ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-footer ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-footer ul li a {
-    color: var(--default-text-color);
-    text-decoration: none;
-}
-
-footer ul li a:hover {
-    text-decoration: underline;
+    .team-member:last-child {
+        margin-right: 0; /* Remove the right margin for the last member */
+    }
 }
