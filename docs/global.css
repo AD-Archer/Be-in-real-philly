@@ -12,7 +12,15 @@
 
 .philly-skyline{
     box-shadow: 0 24px 8px rgba(53, 50, 50, 0.3);
-    
+    max-height: 800px;
+    max-width:  1100px;
+}
+
+.explore-button:hover{
+    background-color: #c5da0a; /* Change background on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+
 }
 
 /* Basic resets */

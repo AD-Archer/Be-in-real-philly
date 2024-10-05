@@ -574,6 +574,7 @@ export const geojsonData = {
           {
             "type": "Feature",
             "properties": {
+              color: red,
               "name": "Liberty Bell Center",
               "description": "The Liberty Bell was originally cast in 1752 for the Pennsylvania State House. It became historically significant during the American Revolution and later associated with the abolitionist movement. The inscription reflects its connection to American independence and human rights.",
               "googleMapsLink": "https://www.google.com/maps/place/Liberty+Bell+Center",
