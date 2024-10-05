@@ -9,6 +9,9 @@
     --button-background-color: #FFD700; /* Gold button background */
 }
 
+.alt{
+    box-shadow: #333;
+}
 /* Basic resets */
 * {
     margin: 0;

@@ -1,4 +1,5 @@
 // GeoJSON data for notable locations in Philadelphia
+
 export const geojsonData = {
     "type": "FeatureCollection",
     "features": [
