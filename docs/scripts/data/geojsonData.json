@@ -1,0 +1,43 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Fairmount Park",
+                "color": "#FF5733"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [-75.215, 39.980],
+                        [-75.198, 39.980],
+                        [-75.198, 39.965],
+                        [-75.215, 39.965],
+                        [-75.215, 39.980]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Fishtown",
+                "color": "#33FF57"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [-75.130, 39.975],
+                        [-75.110, 39.975],
+                        [-75.110, 39.960],
+                        [-75.130, 39.960],
+                        [-75.130, 39.975]
+                    ]
+                ]
+            }
+        }
+    ]
+}

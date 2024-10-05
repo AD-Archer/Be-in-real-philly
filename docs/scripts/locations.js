@@ -25,5 +25,20 @@ export const places = [
         name: "Betsy Ross House",
         coordinates: [39.9522, -75.1440],
         description: "The legendary site where Betsy Ross sewed the first American flag."
-    }
+    },
+    {
+        name: "Elfreth's Alley",
+        coordinates: [39.952709, -75.142372],
+        description: "Oldest residential street in the U.S., with homes dating back to the early 18th century.",
+    },
+
+
+//     ### **7\. Elfreth's Alley**
+
+// * **Location**: 124-126 Elfreth's Alley, Philadelphia, PA 19106  
+// * Overview: Oldest residential street in the U.S., with homes dating back to the early 18th century.
+
+
 ];
+
+

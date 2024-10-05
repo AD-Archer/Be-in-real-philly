@@ -126,7 +126,12 @@ footer ul li a:hover {
 
 /* Buttons */
 button {
-    border-radius: 13px;
-    font-size: small;
-    background-color: var(--button-background-color); /* Gold button background */
+    margin: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: var(--darker-color-for-hero); /* Example color */
+    color: white;
+    border: none;
+    border-radius: 5px;
 }

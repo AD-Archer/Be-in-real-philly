@@ -1,5 +1,4 @@
 import { places } from './locations.js'; 
-
 // Initialize the map and set its view to Philadelphia
 var map = L.map('map').setView([39.9526, -75.1652], 13);
 
@@ -20,8 +19,30 @@ map.on('drag', function() {
     map.panInsideBounds(bounds, { animate: false });
 });
 
-// Disable zooming with mouse scroll by default
-map.scrollWheelZoom.disable();
+// Load GeoJSON data from file
+fetch('./data/geojsonData.json')
+    .then(response => response.json())
+    .then(geojsonData => {
+        // Add GeoJSON layer to the map
+        L.geoJSON(geojsonData, {
+            style: function(feature) {
+                return { color: feature.properties.color, weight: 2, fillOpacity: 0.5 };
+            }
+        }).addTo(map);
+    })
+    .catch(err => console.error('Error loading GeoJSON data:', err));
+
+// Check local storage to see if scroll zoom should be enabled
+let scrollZoomEnabled = localStorage.getItem('scrollZoomEnabled') === 'true';
+
+// Set the scroll zoom state based on local storage
+if (scrollZoomEnabled) {
+    map.scrollWheelZoom.enable();
+    document.getElementById('toggleZoomBtn').textContent = 'Disable Scroll Zoom';
+} else {
+    map.scrollWheelZoom.disable();
+    document.getElementById('toggleZoomBtn').textContent = 'Enable Scroll Zoom';
+}
 
 // Loop through the places array to create markers
 places.forEach(function(place) {
@@ -31,7 +52,6 @@ places.forEach(function(place) {
 
 // Toggle Scroll Zoom functionality
 const toggleZoomBtn = document.getElementById('toggleZoomBtn');
-let scrollZoomEnabled = false; // Track the current state
 
 toggleZoomBtn.addEventListener('click', function() {
     if (scrollZoomEnabled) {
@@ -39,10 +59,12 @@ toggleZoomBtn.addEventListener('click', function() {
         map.scrollWheelZoom.disable();
         toggleZoomBtn.textContent = 'Enable Scroll Zoom'; // Update button text
         scrollZoomEnabled = false; // Update state
+        localStorage.setItem('scrollZoomEnabled', 'false'); // Save state in local storage
     } else {
         // If zoom is disabled, enable it
         map.scrollWheelZoom.enable();
         toggleZoomBtn.textContent = 'Disable Scroll Zoom'; // Update button text
         scrollZoomEnabled = true; // Update state
+        localStorage.setItem('scrollZoomEnabled', 'true'); // Save state in local storage
     }
 });
