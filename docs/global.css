@@ -7,15 +7,14 @@
     --default-text-color-dark: #333; /* Dark text color */
     --light-text-color: #F4F4F9; /* Light text for readability */
     --button-background-color: #FFD700; /* Gold button background */
+
 }
 
 .philly-skyline{
-    box-shadow: #333;
+    box-shadow: 0 24px 8px rgba(53, 50, 50, 0.3);
+    
 }
 
-.alt{
-    box-shadow: #333;
-}
 /* Basic resets */
 * {
     margin: 0;

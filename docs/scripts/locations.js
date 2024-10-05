@@ -18,7 +18,7 @@ export const geojsonData = {
         "type": "Feature",
         "properties": {
           "name": "Old City",
-          "color": "#FF5733",
+          "color": purple,
           "description": "Old City is where Philadelphia began, serving as the heart of the city during its colonial period. It’s home to landmarks like Independence Hall and the Liberty Bell.",
           "googleMapsLink": "https://www.google.com/maps/place/Old+City",
           "website": "",
@@ -252,6 +252,7 @@ export const geojsonData = {
         "type": "Feature",
         "properties": {
           "name": "Community College of Philadelphia (CCP)",
+          "color": red,
           "description": "Established in 1965 to provide affordable higher education to the residents of Philadelphia.",
           "googleMapsLink": "https://www.google.com/maps/place/Community+College+of+Philadelphia+-+Main+Campus/data=!4m7!3m6!1s0x89c6c6e5bce23957:0xd77e3792da2d45b6!8m2!3d39.9617223!4d-75.1663954!16s%2Fg%2F1vxdz6pt!19sChIJVznivOXGxokRtkUt2pI3ftc?authuser=0&hl=en&rclk=1",
           "website": "",
@@ -428,9 +429,6 @@ export const geojsonData = {
         }
       },
       {
-        "type": "FeatureCollection",
-        "features": [
-          {
             "type": "Feature",
             "properties": {
               "name": "Cobbs Creek",
@@ -589,8 +587,6 @@ export const geojsonData = {
           }
         ]
     }
-]
-}
       
 
       

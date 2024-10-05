@@ -20,59 +20,65 @@ map.on('drag', function() {
     map.panInsideBounds(bounds, { animate: false });
 });
 
-// Function to add markers and polygons based on GeoJSON data
-function addMarkers() {
-    geojsonData.features.forEach(feature => {
-        const coordinates = feature.geometry.type === 'Point' 
-            ? feature.geometry.coordinates 
-            : feature.geometry.coordinates[0][0]; // Assuming polygons use the first coordinate set
-
-        // Create a marker or polygon based on geometry type
-        let layer;
-        if (feature.geometry.type === 'Point') {
-            layer = L.marker([coordinates[1], coordinates[0]]);
-        } else {
-            layer = L.polygon(coordinates.map(coord => [coord[1], coord[0]]));
-        }
-
-        // Create a popup with name, description, website link, and image
-        const { name, description, googleMapsLink, website, image } = feature.properties;
-
-        let popupContent = `
-            <h3>${name}</h3>
-            <p>${description}</p>
-            <a href="${googleMapsLink}" target="_blank">View on Google Maps</a><br>
-            ${website ? `<a href="${website}" target="_blank">Visit Website</a><br>` : ''}
-            ${image ? `<img src="${image}" alt="${name}" style="max-width:100px;"/>` : ''}
-        `;
-
-        layer.bindPopup(popupContent);
-        layer.addTo(map); // Add the layer to the map
+// Function to create a default sharp point marker
+function createSharpPointMarker(color) {
+    return L.divIcon({
+        className: 'custom-marker',
+        html: `<div style="background-color: ${color}; border: 2px solid white; width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 15px solid ${color};"></div>`,
+        iconSize: [20, 20], // Adjust size as needed
+        iconAnchor: [10, 20] // Adjust anchor point
     });
 }
 
-// Add GeoJSON layers with additional properties and styling
-const geoJsonLayer = L.geoJSON(geojsonData, {
-    style: function(feature) {
-        return { color: feature.properties.color }; // Customize styling as needed
-    },
-    onEachFeature: function(feature, layer) {
-        if (feature.properties) {
-            // Use the same popup content creation here
-            const popupContent = `
+// Function to add markers and polygons based on GeoJSON data
+function addFeatures() {
+    geojsonData.features.forEach(feature => {
+        const coordinates = feature.geometry.coordinates;
+
+        // Create a marker for points
+        if (feature.geometry.type === 'Point') {
+            // Get color from properties (ensure it's a valid Leaflet color string)
+            const markerColor = feature.properties.color || 'blue'; // Default to blue if no color specified
+
+            // Create a sharp point marker
+            const markerIcon = createSharpPointMarker(markerColor);
+            const marker = L.marker([coordinates[1], coordinates[0]], { icon: markerIcon });
+
+            // Create a popup with name, description, website link, and image
+            const { name, description, googleMapsLink, website, image } = feature.properties;
+
+            let popupContent = `
+                <h3>${name}</h3>
+                <p>${description}</p>
+                <a href="${googleMapsLink}" target="_blank">View on Google Maps</a><br>
+                ${website ? `<a href="${website}" target="_blank">Visit Website</a><br>` : ''}
+                ${image ? `<img src="${image}" alt="${name}" style="max-width:100px;"/>` : ''}
+            `;
+
+            marker.bindPopup(popupContent); // Bind the popup to the marker
+            marker.addTo(map); // Add the marker to the map
+
+        // Create a polygon for other geometry types
+        } else if (feature.geometry.type === 'Polygon') {
+            const polygon = L.polygon(coordinates[0].map(coord => [coord[1], coord[0]]), {
+                color: feature.properties.color || 'blue', // Use the color from properties or default to blue
+                fillOpacity: 0.5 // Adjust fill opacity as needed
+            });
+
+            polygon.bindPopup(`
                 <strong>${feature.properties.name}</strong><br>
                 ${feature.properties.description}<br>
                 <a href="${feature.properties.googleMapsLink}" target="_blank">View on Google Maps</a><br>
                 ${feature.properties.website ? `<a href="${feature.properties.website}" target="_blank">Visit Website</a><br>` : ''}
                 ${feature.properties.image ? `<img src="${feature.properties.image}" alt="${feature.properties.name}" style="max-width:100px;"/>` : ''}
-            `;
-            layer.bindPopup(popupContent); // Bind the popup to the layer
+            `); // Bind the popup to the polygon
+            polygon.addTo(map); // Add the polygon to the map
         }
-    }
-}).addTo(map);
+    });
+}
 
 // Initialize markers and polygons
-addMarkers(); // Call the function to add markers
+addFeatures(); // Call the function to add features
 
 // Check local storage to see if scroll zoom should be enabled
 let scrollZoomEnabled = localStorage.getItem('scrollZoomEnabled') === 'true';
