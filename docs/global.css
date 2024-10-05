@@ -9,6 +9,10 @@
     --button-background-color: #FFD700; /* Gold button background */
 }
 
+.philly-skyline{
+    box-shadow: #333;
+}
+
 .alt{
     box-shadow: #333;
 }

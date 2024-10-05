@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philadelphia Trivia</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-image: url('/placeholder.svg?height=600&width=800');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #003366;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .question {
+            margin-bottom: 20px;
+            background-color: #e6f2ff;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .options {
+            display: flex;
+            flex-direction: column;
+        }
+        .option {
+            margin: 5px 0;
+            padding: 10px;
+            background-color: #003366;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .option:hover {
+            background-color: #004080;
+        }
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Philadelphia Trivia</h1>
+        
+        <div class="question">
+            <h2>1. What is the nickname of Philadelphia?</h2>
+            <div class="options">
+                <button class="option">The Big Apple</button>
+                <button class="option">The Windy City</button>
+                <button class="option">The City of Brotherly Love</button>
+                <button class="option">The Motor City</button>
+            </div>
+        </div>
+
+        <div class="question">
+            <h2>2. Which famous document was signed in Philadelphia in 1776?</h2>
+            <div class="options">
+                <button class="option">The Constitution</button>
+                <button class="option">The Declaration of Independence</button>
+                <button class="option">The Emancipation Proclamation</button>
+                <button class="option">The Treaty of Paris</button>
+            </div>
+        </div>
+
+        <div class="question">
+            <h2>3. What is the name of the famous cracked bell in Philadelphia?</h2>
+            <div class="options">
+                <button class="option">Freedom Bell</button>
+                <button class="option">Independence Bell</button>
+                <button class="option">Liberty Bell</button>
+                <button class="option">Constitution Bell</button>
+            </div>
+        </div>
+
+        <div class="question">
+            <h2>4. Which famous Philadelphian is known for flying a kite during a thunderstorm?</h2>
+            <div class="options">
+                <button class="option">George Washington</button>
+                <button class="option">Thomas Jefferson</button>
+                <button class="option">Benjamin Franklin</button>
+                <button class="option">John Adams</button>
+            </div>
+        </div>
+
+        <div class="question">
+            <h2>5. What is the name of the famous steps in Philadelphia, often associated with the movie "Rocky"?</h2>
+            <div class="options">
+                <button class="option">Liberty Steps</button>
+                <button class="option">Rocky Steps</button>
+                <button class="option">Philadelphia Museum of Art Steps</button>
+                <button class="option">Independence Steps</button>
+            </div>
+        </div>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        const options = document.querySelectorAll('.option');
+        const result = document.getElementById('result');
+        let score = 0;
+        const correctAnswers = [2, 1, 2, 2, 2]; // Index of correct answers (0-based)
+
+        options.forEach((option, index) => {
+            option.addEventListener('click', () => {
+                const questionIndex = Math.floor(index / 4);
+                if (index % 4 === correctAnswers[questionIndex]) {
+                    score++;
+                    option.style.backgroundColor = '#4CAF50';
+                } else {
+                    option.style.backgroundColor = '#F44336';
+                    options[questionIndex * 4 + correctAnswers[questionIndex]].style.backgroundColor = '#4CAF50';
+                }
+                if (questionIndex === correctAnswers.length - 1) {
+                    result.textContent = `You scored ${score} out of ${correctAnswers.length}!`;
+                }
+            });
+        });
+    </script>
+</body>
+</html>

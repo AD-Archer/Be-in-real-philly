@@ -1,3 +1,14 @@
+// colors 
+const red = "#fe0000"
+const blue = "#FF5733"
+const green = "#18fe00"
+const yellow = "#fef600"
+const purple = "#f000fe"
+
+
+
+
+
 // GeoJSON data for notable locations in Philadelphia
 
 export const geojsonData = {
@@ -241,7 +252,6 @@ export const geojsonData = {
         "type": "Feature",
         "properties": {
           "name": "Community College of Philadelphia (CCP)",
-          "color": "#FFCC00",
           "description": "Established in 1965 to provide affordable higher education to the residents of Philadelphia.",
           "googleMapsLink": "https://www.google.com/maps/place/Community+College+of+Philadelphia+-+Main+Campus/data=!4m7!3m6!1s0x89c6c6e5bce23957:0xd77e3792da2d45b6!8m2!3d39.9617223!4d-75.1663954!16s%2Fg%2F1vxdz6pt!19sChIJVznivOXGxokRtkUt2pI3ftc?authuser=0&hl=en&rclk=1",
           "website": "",
