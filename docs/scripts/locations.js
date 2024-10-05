@@ -227,11 +227,11 @@ export const geojsonData = {
        "geometry": {
     "type": "Polygon",
     "coordinates": [[
-      [-75.1620, 39.9850],  // North-East
-      [-75.1580, 39.9850],  // North-West
-      [-75.1580, 39.9810],  // South-West
-      [-75.1620, 39.9810],  // South-East
-      [-75.1620, 39.9850]   // Closing the polygon
+        [-75.1650, 39.9865],  // North-East
+        [-75.1550, 39.9865],  // North-West
+        [-75.1550, 39.9795],  // South-West
+        [-75.1650, 39.9795],  // South-East
+        [-75.1650, 39.9865]   // Closing the polygon    ]]
     ]]
   }
 
@@ -242,7 +242,7 @@ export const geojsonData = {
           "name": "Community College of Philadelphia (CCP)",
           "color": "#FFCC00",
           "description": "Established in 1965 to provide affordable higher education to the residents of Philadelphia.",
-          "googleMapsLink": "https://www.google.com/maps/place/Community+College+of+Philadelphia",
+          "googleMapsLink": "https://www.google.com/maps/place/Community+College+of+Philadelphia+-+Main+Campus/data=!4m7!3m6!1s0x89c6c6e5bce23957:0xd77e3792da2d45b6!8m2!3d39.9617223!4d-75.1663954!16s%2Fg%2F1vxdz6pt!19sChIJVznivOXGxokRtkUt2pI3ftc?authuser=0&hl=en&rclk=1",
           "website": "",
           "image": ""
         },
