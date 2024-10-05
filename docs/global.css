@@ -135,3 +135,11 @@ button {
     border: none;
     border-radius: 5px;
 }
+
+.popup-image {
+    max-width: 80%;
+    height: auto;
+    display: block; /* Makes the image a block element */
+    margin: 0 auto; /* Centers the image */
+    border-radius: 8px; /* Optional: Rounded corners */
+}

@@ -1,3 +1,17 @@
+
+# William Penn, His influence on Philadelphia\!
+
+## Background
+
+	\-  William Penn born October 24th 1644 (old dating system: October 16th 1644\) was an English writer, religious thinker, and influential Quaker who founded Pennsylvania during the British colonial era. He was known for his advocacy of democracy and kind nature, seeing that he made multiple peace treaties with the Lenape, a native american group who settled down in modern day Pennsylvania prior to European settlement. Growing up, penn 
+
+# History of Philadelphia 
+
+Penn was granted a vast tract of land in North America by King Charles II as a means of repaying a debt owed to Penn’s father. That land ultimately became Pennsylvania, along with the many cities that now reside within it, including Philadelphia. Numerous colonists pledged their allegiance to Penn, recognizing him as the founder of Pennsylvania. Later, Penn journeyed up the banks of the Delaware River and encountered land that, as previously mentioned, was inhabited by the Lenape people. The Lenape were gradually being displaced due to the encroachment of European colonization. This expansion brought with it significant challenges, including the spread of deadly diseases carried by the Europeans, which severely weakened the Lenape and forced them to begin relocating. In an effort to foster peace, Penn purchased the land and sought to create a peaceful colony for all. He negotiated a peace treaty with the Lenape chief in what is now known as ‘Fishtown,’ marking the beginning of our cherished Philadelphia ( Greek for “brotherly love”).
+
+
+
+
 # **Write the location and the history associated with that area.**
 
 **1\. Old City**
@@ -30,12 +44,6 @@ Location: South of Center City, extending to the Delaware River waterfront.
 
 History: South Philadelphia is known for its strong Italian-American community, though it’s also home to a mix of Irish, African American, and Asian communities. It was historically an industrial area, home to factories and dockyards. The Italian Market and the sports complex housing the Phillies, Eagles, and Flyers are located here. Over the years, South Philadelphia has maintained its working-class roots while also undergoing changes due to gentrification and development.
 
-# William Penn, His influence on Philadelphia\!
-
-## Background
-
-	\-  William Penn born October 24th 1644 (old dating system: October 16th 1644\) was an English writer, religious thinker, and influential Quaker who founded Pennsylvania during the British colonial era. He was known for his advocacy of democracy and kind nature, seeing that he made multiple peace treaties with the Lenape, a native american group who settled down in modern day Pennsylvania prior to European settlement.   
-Penn was given a large piece of North American land by King Charles II as a way of paying off debt he owed Penn’s father, that land obviously went on to become Pennsylvania and the many cities that reside in it , including Philadelphia\! Many colonists pledged their allegiance to Penn and pointed him as the Founder of Pennsylvania. He later moved up the river bank of Delaware and came across land which, as reference earlier, was the territory of the Lenape people. 
 
 ### **7\. Elfreth's Alley**
 
@@ -110,3 +118,150 @@ The Fashion District in Philadelphia was established as part of a major redevelo
 The district has also been a part of efforts to celebrate local talent, with a focus on supporting minority-owned businesses and promoting diverse fashion retailers. Its development has revitalized the Market East area, attracting both locals and tourists to experience a unique shopping environment.
 
 
+**Philadelphia School District**
+**Location** 440 N. Broad Street, Philadelphia, PA 19130
+**Overview:** The Philadelphia School District (PSD) is the largest school district in Pennsylvania and the eighth largest in the United States, serving over 200,000 students across approximately 220 schools. It was established in 1818 and has undergone numerous transformations and reforms to improve educational outcomes for its diverse student population.
+
+Throughout its history, the district has faced challenges, including budget constraints, issues of educational equity, and changing demographics. Despite these challenges, PSD has made strides in various areas, including increased funding, implementation of innovative educational programs, and efforts to address disparities in resources and academic achievement among schools.
+
+
+**Surburban Station**
+**Location** 1700 JFK Blvd, Philadelphia, PA 19103
+**Overview:** Suburban Station is a major commuter railway station in Philadelphia, serving as a hub for regional transportation. Opened in 1930, it was designed by the architectural firm of McKim, Mead & White and features a grand Beaux-Arts style, characterized by its high ceilings and large waiting areas.
+
+The station primarily serves SEPTA (Southeastern Pennsylvania Transportation Authority) regional rail lines, providing connections to suburban areas and other parts of Pennsylvania. It also offers access to Amtrak services and connections to the Philadelphia subway system.
+
+
+**City Hall** 
+**Location** 1401 John F. Kennedy Blvd, Philadelphia, PA 19102
+**Overview** Philadelphia City Hall, completed in 1901, is an iconic example of Second Empire architecture and remains one of the tallest masonry buildings in the United States. Designed by architect John McArthur Jr., the building features a striking clock tower topped by a statue of the city's founder, William Penn.
+
+City Hall serves as the seat of Philadelphia's government, housing the offices of the mayor, city council, and other municipal departments. The building is not only a functional government facility but also a historical landmark, reflecting the city's rich architectural heritage.
+
+**Liberty Bell Center**
+**Location**  526 Market Street, Philadelphia, PA 19106
+**Overview** The Liberty Bell, one of America’s most iconic symbols of freedom and independence, was originally cast in 1752 for the Pennsylvania State House (now Independence Hall). It was commissioned to commemorate the 50th anniversary of William Penn’s Charter of Privileges, Pennsylvania's original constitution, which emphasized religious freedom and the rights of the people to self-governance.
+
+The bell became historically significant during the American Revolution and later was associated with the abolitionist movement, as it was seen as a symbol of liberty for all people. The famous crack appeared during an attempt to repair the bell in the 1840s. Despite being silenced, the bell’s message of liberty has endured.
+
+The inscription on the bell, “Proclaim LIBERTY Throughout all the Land unto all the Inhabitants Thereof,” is from the Bible (Leviticus 25:10) and reflects its historical connection to the fight for American independence and human rights.
+
+**Norristown**
+**Location** 1001 Powell St, Norristown, PA 19401
+**Overview** Norristown is the county seat of Montgomery County, Pennsylvania, with a rich history dating back to its establishment in the early 18th century. Originally settled in the 1700s, Norristown developed as a key transportation hub due to its location along the Schuylkill River and the establishment of the Pennsylvania Turnpike. The town was officially incorporated in 1853 and rapidly grew as an industrial center in the 19th century, with a strong focus on manufacturing, particularly textiles and machinery. 
+
+**East Passyunk**
+**Location** 
+**Overview:** East Passyunk has a rich history dating back to the 19th century when it began as a working-class neighborhood primarily inhabited by Irish and Italian immigrants. The area developed as a center for local businesses, with Passyunk Avenue serving as a main commercial corridor. In recent years, East Passyunk has undergone significant revitalization, emerging as a vibrant culinary and cultural hub.
+
+
+**FOOD FOOD FOOD FOOD FOOD FOOD FOOD FOOD FOOD FOOD FOOD FOOD FOOD FOOD FOOD FOOD FOOD FOOD FOOD FOOD FOOD FOOD FOOD FOOD FOOD FOOD FOOD FOOD FOOD FOOD FOOD FOOD**
+
+**Geno's Steaks**
+**Location** 1219 S 9th St, Philadelphia, PA 19147
+**website** https://www.genosteaks.com 
+**Overview** Geno's Steaks is a legendary Philadelphia cheesesteak restaurant, established in 1966 by Geno Vento. It is situated directly across from Pat's King of Steaks, creating a famous rivalry that has become a cultural icon in the city. The establishment is known for its bright neon signs and distinctive ordering style, which often includes the use of English and Spanish.
+
+Geno's has built a reputation for its use of high-quality ingredients, particularly its thinly sliced ribeye steak and freshly baked rolls. The restaurant offers a variety of cheesesteak options, including the classic with cheese, as well as other toppings like fried onions and peppers.
+
+
+
+**Pat's King of Steaks**
+**Location** 1237 E Passyunk Ave, Philadelphia, PA 19147
+**website** https://www.patskingofsteaks.com
+**Overview** Pat's King of Steaks, founded in 1930 by Pat Olivieri, is one of the most famous cheesesteak establishments in Philadelphia. It is situated across from Geno's Steaks, creating a competitive rivalry that attracts cheesesteak enthusiasts from all over the country. Pat's is known for its classic cheesesteak, made from thinly sliced ribeye steak, served on freshly baked Italian rolls, and topped with various cheese options, including the traditional Cheez Whiz.
+
+
+**Reading Terminal Market**
+**Location:** 1136 Arch St, Philadelphia, PA 19107
+**History:** Opened in 1893, Reading Terminal Market is one of America’s oldest and largest public markets. Originally a train station, it transformed into a bustling marketplace filled with vendors selling fresh produce, meats, and a variety of foods, including iconic Philadelphia cheesesteaks and pretzels. The market showcases Philadelphia's diverse culinary landscape and has become a beloved destination for both locals and tourists​
+
+
+
+
+
+
+
+
+
+
+
+
+**Location**
+**Overview**
+
+
+
+
+
+
+
+
+**Location**
+**Overview**
+
+
+
+
+
+
+
+
+
+**Location**
+**Overview**
+
+
+
+
+
+
+
+**Location**
+**Overview**
+
+
+
+
+
+
+
+**Location**
+**Overview**
+
+
+**Location**
+**Overview**
+
+
+**Location**
+**Overview**
+
+
+
+**Location**
+**Overview**
+
+
+
+**Location**
+**Overview**
+
+
+
+**Location**
+**Overview**
+
+
+
+**Location**
+**Overview**
+
+
+**Location**
+**Overview**
+
+
+
+**Location**
+**Overview**

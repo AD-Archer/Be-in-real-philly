@@ -1,4 +1,5 @@
-import { places } from './locations.js'; 
+import { geojsonData } from './locations.js';  // Adjust the path as necessary
+
 // Initialize the map and set its view to Philadelphia
 var map = L.map('map').setView([39.9526, -75.1652], 13);
 
@@ -19,18 +20,59 @@ map.on('drag', function() {
     map.panInsideBounds(bounds, { animate: false });
 });
 
-// Load GeoJSON data from file
-fetch('./data/geojsonData.json')
-    .then(response => response.json())
-    .then(geojsonData => {
-        // Add GeoJSON layer to the map
-        L.geoJSON(geojsonData, {
-            style: function(feature) {
-                return { color: feature.properties.color, weight: 2, fillOpacity: 0.5 };
-            }
-        }).addTo(map);
-    })
-    .catch(err => console.error('Error loading GeoJSON data:', err));
+// Function to add markers and polygons based on GeoJSON data
+function addMarkers() {
+    geojsonData.features.forEach(feature => {
+        const coordinates = feature.geometry.type === 'Point' 
+            ? feature.geometry.coordinates 
+            : feature.geometry.coordinates[0][0]; // Assuming polygons use the first coordinate set
+
+        // Create a marker or polygon based on geometry type
+        let layer;
+        if (feature.geometry.type === 'Point') {
+            layer = L.marker([coordinates[1], coordinates[0]]);
+        } else {
+            layer = L.polygon(coordinates.map(coord => [coord[1], coord[0]]));
+        }
+
+        // Create a popup with name, description, website link, and image
+        const { name, description, googleMapsLink, website, image } = feature.properties;
+
+        let popupContent = `
+            <h3>${name}</h3>
+            <p>${description}</p>
+            <a href="${googleMapsLink}" target="_blank">View on Google Maps</a><br>
+            ${website ? `<a href="${website}" target="_blank">Visit Website</a><br>` : ''}
+            ${image ? `<img src="${image}" alt="${name}" style="max-width:100px;"/>` : ''}
+        `;
+
+        layer.bindPopup(popupContent);
+        layer.addTo(map); // Add the layer to the map
+    });
+}
+
+// Add GeoJSON layers with additional properties and styling
+const geoJsonLayer = L.geoJSON(geojsonData, {
+    style: function(feature) {
+        return { color: feature.properties.color }; // Customize styling as needed
+    },
+    onEachFeature: function(feature, layer) {
+        if (feature.properties) {
+            // Use the same popup content creation here
+            const popupContent = `
+                <strong>${feature.properties.name}</strong><br>
+                ${feature.properties.description}<br>
+                <a href="${feature.properties.googleMapsLink}" target="_blank">View on Google Maps</a><br>
+                ${feature.properties.website ? `<a href="${feature.properties.website}" target="_blank">Visit Website</a><br>` : ''}
+                ${feature.properties.image ? `<img src="${feature.properties.image}" alt="${feature.properties.name}" style="max-width:100px;"/>` : ''}
+            `;
+            layer.bindPopup(popupContent); // Bind the popup to the layer
+        }
+    }
+}).addTo(map);
+
+// Initialize markers and polygons
+addMarkers(); // Call the function to add markers
 
 // Check local storage to see if scroll zoom should be enabled
 let scrollZoomEnabled = localStorage.getItem('scrollZoomEnabled') === 'true';
@@ -44,27 +86,17 @@ if (scrollZoomEnabled) {
     document.getElementById('toggleZoomBtn').textContent = 'Enable Scroll Zoom';
 }
 
-// Loop through the places array to create markers
-places.forEach(function(place) {
-    var marker = L.marker(place.coordinates).addTo(map);
-    marker.bindPopup("<b>" + place.name + "</b><br>" + place.description);
-});
-
 // Toggle Scroll Zoom functionality
 const toggleZoomBtn = document.getElementById('toggleZoomBtn');
-
 toggleZoomBtn.addEventListener('click', function() {
     if (scrollZoomEnabled) {
-        // If zoom is enabled, disable it
         map.scrollWheelZoom.disable();
-        toggleZoomBtn.textContent = 'Enable Scroll Zoom'; // Update button text
-        scrollZoomEnabled = false; // Update state
-        localStorage.setItem('scrollZoomEnabled', 'false'); // Save state in local storage
+        toggleZoomBtn.textContent = 'Enable Scroll Zoom';
+        scrollZoomEnabled = false;
     } else {
-        // If zoom is disabled, enable it
         map.scrollWheelZoom.enable();
-        toggleZoomBtn.textContent = 'Disable Scroll Zoom'; // Update button text
-        scrollZoomEnabled = true; // Update state
-        localStorage.setItem('scrollZoomEnabled', 'true'); // Save state in local storage
+        toggleZoomBtn.textContent = 'Disable Scroll Zoom';
+        scrollZoomEnabled = true;
     }
+    localStorage.setItem('scrollZoomEnabled', scrollZoomEnabled); // Save state in local storage
 });
