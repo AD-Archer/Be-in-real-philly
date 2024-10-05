@@ -78,25 +78,23 @@ addMarkers(); // Call the function to add markers
 let scrollZoomEnabled = localStorage.getItem('scrollZoomEnabled') === 'true';
 
 // Set the scroll zoom state based on local storage
-if (scrollZoomEnabled) {
-    map.scrollWheelZoom.enable();
-    document.getElementById('toggleZoomBtn').textContent = 'Disable Scroll Zoom';
-} else {
-    map.scrollWheelZoom.disable();
-    document.getElementById('toggleZoomBtn').textContent = 'Enable Scroll Zoom';
+function updateScrollZoom() {
+    if (scrollZoomEnabled) {
+        map.scrollWheelZoom.enable();
+        document.getElementById('toggleZoomBtn').textContent = 'Disable Scroll Zoom';
+    } else {
+        map.scrollWheelZoom.disable();
+        document.getElementById('toggleZoomBtn').textContent = 'Enable Scroll Zoom';
+    }
 }
+
+// Call the update function to set the initial state
+updateScrollZoom();
 
 // Toggle Scroll Zoom functionality
 const toggleZoomBtn = document.getElementById('toggleZoomBtn');
-toggleZoomBtn.addEventListener('click', function() {
-    if (scrollZoomEnabled) {
-        map.scrollWheelZoom.disable();
-        toggleZoomBtn.textContent = 'Enable Scroll Zoom';
-        scrollZoomEnabled = false;
-    } else {
-        map.scrollWheelZoom.enable();
-        toggleZoomBtn.textContent = 'Disable Scroll Zoom';
-        scrollZoomEnabled = true;
-    }
+toggleZoomBtn.addEventListener('click', function () {
+    scrollZoomEnabled = !scrollZoomEnabled; // Toggle the state
+    updateScrollZoom(); // Update the map based on the new state
     localStorage.setItem('scrollZoomEnabled', scrollZoomEnabled); // Save state in local storage
 });
