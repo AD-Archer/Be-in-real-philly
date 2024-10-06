@@ -1,0 +1,52 @@
+# Basic configuration for Jekyll
+title: The Philly Way
+description: A website about Philadelphia, showcasing its history and culture.
+
+# Author information
+author:
+  name: Antonio Archer
+  email: aarch0004@launchpadphilly.org
+
+# URL of the site
+url: "https://ad-archer.github.io/thePhillyWay"
+
+# Base URL for the site (if using GitHub Pages)
+baseurl: "/thePhillyWay"  # Change this if your repo is named differently
+
+# Build settings
+markdown: kramdown  # Markdown processor
+theme: minima       # You can change this to another Jekyll theme if desired
+
+# Include directories
+include:
+  - _pages          # Custom pages directory (if you create this)
+  - _layouts        # Layout files
+  - _includes       # Includes for your templates
+  - _posts          # Posts directory
+
+# Permalinks settings
+permalink: pretty   # You can use 'pretty', 'date', or custom permalinks
+
+# Plugins to be used
+plugins:
+  - jekyll-feed     # For RSS feed
+  - jekyll-seo-tag  # For SEO metadata
+
+# Other optional configurations
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - _config.yml
+  - node_modules
+
+# Custom theme settings (if using a theme that supports it)
+# theme_settings:
+#   custom_color: "#ff5733"
+#   custom_font: "Arial, sans-serif"
+
+# Collections (optional)
+collections:
+  personal_pages:
+    output: true
+    permalink: /personal_pages/:title/
