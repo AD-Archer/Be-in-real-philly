@@ -35,7 +35,7 @@ header {
 }
 
 h1 {
-    color: rgb(146, 4, 168);
+    color: #003366;
     margin-bottom: 30px;
 }
 
@@ -47,7 +47,7 @@ main {
 /* Question styling */
 .question {
     margin-bottom: 20px;
-    background-color: #e6f2ff;
+    background-color: #C3B1E1;
     padding: 15px;
     border-radius: 5px;
 }
@@ -62,7 +62,7 @@ main {
 .option {
     margin: 5px 0;
     padding: 10px;
-    background-color: #003366;
+    background-color: rgb(88, 37, 130);
     color: white;
     border: none;
     border-radius: 5px;
