@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>West and Southwest Philly Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link rel="stylesheet" href="../../styles/personalPagesStyles/westphilly.css"> <!-- Link to custom CSS -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>West & Southwest Philly Map</h1>
+            <nav>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../map.html">Maps</a></li>
+                </ul>
+            </nav>
+            <button id="toggleZoomBtn">Enable Scroll Zoom</button> <!-- Toggle Button -->
+            <h3>Welcome to West Philly, the Archer way</h3>
+        </header>
+
+        <div id="map"></div>
+
+        <footer>
+            <p>Explore West and Southwest Philly | Made with Leaflet</p>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script type="module" src="../../scripts/personalPages/westphilly.js"></script> <!-- Link to custom JS -->
+</body>
+</html>
