@@ -26,7 +26,7 @@ body {
 
 /* Header styling */
 header {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #0072B8; /* Philadelphia blue */
     color: #eec739; /* Bright yellow */
     padding: 1rem;
@@ -63,36 +63,48 @@ nav ul li a:hover {
     text-align: center;
     padding: 100px 20px;
     grid-row: 2; /* Place in the middle grid row */
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center hero content vertically */
     align-items: center;
-    min-height: calc(100vh - 140px); /* Adjust height based on header and footer */
 }
 
-/* Ensure the image scales properly */
-.hero img {
-    width: 100%; /* Make the image fill the width of the screen */
-    height: 90vh; /* Make the image take up 90% of the viewport height */
-    object-fit: cover; /* Ensures the image covers the available space without distortion */
-    border-radius: 10px; /* Optional: rounded corners */
-    margin-bottom: 1.5rem; /* Space below the image */
+/* Fix the image container to include box shadow */
+.image-container {
+    width: 80%; /* Reduce container size */
+    max-height: 70vh;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Shadow around the container */
+    overflow: hidden; /* Ensure shadow stays clean */
+    margin-bottom: 1.5rem; /* Space below image */
 }
 
+.image-container img {
+    width: 100%;
+    height: auto; /* Let the height adjust based on the image's aspect ratio */
+    display: block;
+    object-fit: cover;
+}
 
 .hero h2 {
+    position: relative;
+    top: 30px;
     font-size: 3rem;
     color: #ddb72f; /* Bright yellow for contrast */
 }
 
 .hero p {
+    position: relative;
+    top: 30px;
+    font-family: Rockwell;
     font-size: 1.5rem;
     margin: 1rem 0 2rem;
     color: #F4F4F9; /* Light text for readability */
 }
 
 .hero button {
+    position: relative;
+    top: 30px;
     background-color: #F4D35E;
     color: #005C99; /* Darker blue for button text */
     padding: 15px 30px;
@@ -100,17 +112,16 @@ nav ul li a:hover {
     border-radius: 5px;
     font-size: 1.2rem;
     cursor: pointer;
-    font-family:  ;
+    font-family: Rockwell;
+    box-shadow: 0 10px 15px rgba(15, 15, 15, 0.3); /* Button shadow */
 }
 
 .hero button:hover {
     background-color: #1210aa; /* Change background on hover */
-    color:  #FFD700;
+    color: #FFD700;
     transform: scale(1.1); /* Slightly enlarge on hover */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
-
 }
-
 
 /* Footer styling */
 footer {

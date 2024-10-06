@@ -5,6 +5,8 @@
 .contact {
     text-align: center;
     padding: 2rem 0;
+    position: relative;
+    top: 20px;
 }
 
 .team-member {
