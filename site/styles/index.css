@@ -8,6 +8,11 @@
     box-sizing: border-box;
 }
 
+#main-title{
+    font-size: 50px;
+   
+}
+
 html, body {
     height: 100%;
     font-family: 'Lato', sans-serif;
@@ -47,6 +52,7 @@ nav ul li {
 }
 
 nav ul li a {
+    font-size: 20px;
     color: #F4D35E;
     text-decoration: none;
     font-weight: bold;

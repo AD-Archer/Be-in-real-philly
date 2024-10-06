@@ -9,12 +9,27 @@
     top: 20px;
 }
 
+#team-container{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Adds shadow */
+}
+
+
+#mo{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Adds shadow */
+}
+
 .team-member {
     text-align: center; /* Ensures everything inside is centered */
     margin-bottom: 2rem;
 }
 
 .team-member img {
+    position: relative;
+    top: 10px;
     width: 150px; /* Fixed width */
     height: 150px; /* Fixed height */
     object-fit: cover; /* Ensures images cover the area */
@@ -36,6 +51,10 @@
 .links a:hover {
     color: var(--default-variable-color);
     text-decoration: underline;
+}
+
+#main-header{
+    font-size: 40px;
 }
 
 h3 {
