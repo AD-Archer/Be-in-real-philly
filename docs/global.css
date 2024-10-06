@@ -1,7 +1,8 @@
 /* Variables */
+
 :root {
     --default-variable-color: #0072B8; /* Philadelphia blue */
-    --default-text-color: #F4D35E; /* Bright yellow */
+    --default-text-color: #ffd416; /* Bright yellow */
     --darker-color-for-hero: #005C99; /* Darker color for hero */
     --neutral-background-color: #FAF3DD; /* Neutral background */
     --default-text-color-dark: #333; /* Dark text color */
@@ -17,7 +18,8 @@
 }
 
 .explore-button:hover{
-    background-color: #c5da0a; /* Change background on hover */
+    background-color: #1210aa; /* Change background on hover */
+    color:  #FFD700;
     transform: scale(1.1); /* Slightly enlarge on hover */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
 
