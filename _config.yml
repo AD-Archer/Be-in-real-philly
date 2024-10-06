@@ -1,17 +1,8 @@
-# Basic configuration for Jekyll
+# _config.yml
 title: The Philly Way
-description: A website about Philadelphia, showcasing its history and culture.
-
-# Author information
-author:
-  name: Antonio Archer
-  email: aarch0004@launchpadphilly.org
-
-# URL of the site
-url: "https://ad-archer.github.io/thePhillyWay"
-
-# Base URL for the site (if using GitHub Pages)
-baseurl: "/thePhillyWay"  # Change this if your repo is named differently
+description: A site about Philadelphia
+baseurl: "/thePhillyWay" # Adjust if your repository is named differently
+url: "https://ad-archer.github.io" # Replace with your actual GitHub username
 
 # Build settings
 markdown: kramdown  # Markdown processor
