@@ -1,0 +1,143 @@
+/* import global themes */
+@import url('../global.css');
+
+/* Basic resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    background-color: #FAF3DD;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Grid container */
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+/* Header styling */
+header {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #0072B8;
+    color: #eec739;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 0.5rem;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #F4D35E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    background-color: #4782aa;
+    color: white;
+    padding: 2rem;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 140px);
+}
+
+.about {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    color: #ddb72f;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.about p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    color: #F4F4F9;
+}
+
+.about strong {
+    color: #F4D35E;
+}
+
+/* Footer styling */
+footer {
+    background-color: #0072B8;
+    color: #F4D35E;
+    text-align: center;
+    padding: 1rem;
+    grid-row: 3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .about {
+        padding: 1.5rem;
+    }
+
+    .about h2 {
+        font-size: 2rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
+}
+
+/* Optional: Add a decorative element */
+.about::before {
+    content: "🔔";
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
